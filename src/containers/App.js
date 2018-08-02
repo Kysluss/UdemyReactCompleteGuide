@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppClasses from './App.css';
-import Person from './components/Person/Person';
+import Person from '../components/Persons/Person/Person';
 
 class App extends Component {
   state = {
@@ -56,7 +56,6 @@ class App extends Component {
               click = {() => this.deletePersonHandler(index)} 
               name={person.name} 
               age={person.age} 
-              key={person.id} 
               changed={(event) => this.nameChangedHandler(event, person.id)} />
           })}
         </div>

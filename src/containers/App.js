@@ -3,7 +3,7 @@ import AppClasses from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
 import Aux from '../hoc/Auxilary';
-import withClass from '../hoc/withClass';
+import withClass from '../hoc/WithClass';
 
 class App extends PureComponent {
   constructor(props) {

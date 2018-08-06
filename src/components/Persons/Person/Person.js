@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import PersonClasses from './Person.css';
 import Aux from '../../../hoc/Auxilary';
-import withClass from '../../../hoc/withClass';
+import withClass from '../../../hoc/WithClass';
 
 class Person extends Component {
     constructor(props) {
@@ -18,9 +18,10 @@ class Person extends Component {
 
     componentDidMount() {
         console.log('[Person.js] Inside componentDidMount()');
-        if(this.props.position === 0) {
-            this.inputElement.current.focus();
-        }
+    }
+
+    focus() {
+        this.inputElement.current.focus();
     }
 
     render() {

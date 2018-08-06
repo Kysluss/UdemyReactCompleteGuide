@@ -15,7 +15,8 @@ class App extends PureComponent {
         { id: 'abc', name: 'Max', age: 28 }, 
         { id: 'def', name: 'Manu', age: 29 }, 
         { id: 'hij', name: 'Angelina', age: 27 }
-      ]
+      ], 
+      toggleClicked: 0
     };
   }
 
@@ -78,7 +79,8 @@ class App extends PureComponent {
     const doesShow = this.state.showPersons;
 
     this.setState({
-      showPersons: !doesShow
+      showPersons: !doesShow, 
+      toggleClicked: this.state.toggleClicked + 1
     });
   }
 

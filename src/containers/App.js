@@ -114,7 +114,7 @@ class App extends PureComponent {
           showPersons={this.state.showPersons} 
           persons={this.state.persons} 
           clicked={this.togglePersonsHandler} />
-          <AuthContext.Provider>
+          <AuthContext.Provider value={this.state.authenticated}>
             { persons }
           </AuthContext.Provider>
       </Aux>
